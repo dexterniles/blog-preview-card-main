@@ -12,10 +12,9 @@
 body {
     background-color: hsl(47, 88%, 63%);
     height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid; /* centers card in the middle of the screen */
+    place-items: center;
+
 }
 
 .container {
