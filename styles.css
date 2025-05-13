@@ -1,13 +1,97 @@
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: hsl(47, 88%, 63%);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.container {
+    font-family: "Figtree";
+    font-size: 1em;
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.img > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.body-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.learning {
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.5em;
+    font-weight: 600;
+    border-radius: 0.25em;
+    border-style: none;
+    color: hsl(0, 0%, 7%);
+    width: 75px;
+}
+
+.published {
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.title {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+.description {
+    color: hsl(0, 0%, 42%);
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.75em;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+.author > img {
+    height: 25px;
+    width: auto;
+}
 
 .attribution {
-    font-size: 11px; text-align: center; 
+    font-family: "Figtree";
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0%;
+    position: fixed;
+    color: hsl(0, 0%, 7%);
 }
 .attribution a {
     color: hsl(228, 45%, 44%); 
